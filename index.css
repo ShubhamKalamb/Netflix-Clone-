@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.top-header{
+    height: 80vh;
+    background-image: url(./images/Backgroud_img.jpg);
+}
+.navbar{
+    padding-top: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 25px;
+}
+.btn{
+    background: transparent;
+    border: none;
+}
+.sign-btn{
+    margin-left: 10px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e50914;
+    border-radius: 4px;
+    color: #ffff;
+}
+.content{
+    color: #ffff;
+    margin: auto;
+    font-size: 30px;
+    position: absolute;
+    margin-top: 8%;
+    margin-left: 20%;
+    padding: 10px;
+   
+}
+.mail{
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    background-color: #ffff;
+    display: flex;
+    justify-content: space-between;
+}
+.mail input{
+    outline: none;
+    border: none;
+    padding: 12px 10px;
+    size: 0.7em;
+    border-radius: 15px;
+}
+.mail a{
+    height: fit-content;
+    background-color: #e50914;
+    color: #ffff;
+    padding: 10px  5px;
+    text-decoration: none;
+}
+
+.down{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 46px;
+    padding: 70px 40px;
+    background-color: black;
+    color: #ffff;
+    align-items: center;
+}
+.text h1{
+    font-size: 3rem;
+    font-weight: 900;
+    display: block;
+    box-sizing: content-box;
+    margin-top: 100px;
+}
+.text p{
+    font-size: 1.7rem;
+    font-weight: 400; 
+}
+.media{
+    position: relative;
+}
+.media1 img{
+    width: 500px;
+}
+.media1 video{
+    position: absolute;
+    width: 363px;
+    top: 78px;
+    left: 67px;
+}
+.media3 img{
+    width: 500px;
+    top: 50px;
+}
+.media3 video{
+    position: absolute;
+    width: 304px;
+    left: 876px;
+    margin-top: 34px;
+}
+.divider{
+    background-color: rgb(35, 35, 35);
+    height: 8px;
+}
+----------faq-----------
+.faq{
+    background-color: black;
+}
+.a{
+    background-color: black;
+}
+.faq h2{
+    text-align: center;
+    font-size: 30px;
+    background-color: black;
+    color: #ffff;
+    font-weight: 500;
+}
+.question{
+    margin: auto;
+    width: 100%;
+    max-width: 750px;
+    background-color: black;
+}
+.question li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.question li label{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #303030;
+    color: #ffff;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+label::after{
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+}
+input[type="radio"]{
+    display: none;
+}
+.question .content{
+    background: #303030;
+    color: #ffff;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-heaight 0.5s;
+}
+.a .question input[type="radio"] :checked  + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
